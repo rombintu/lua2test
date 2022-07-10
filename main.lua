@@ -44,6 +44,7 @@ function love.mousepressed(x, y, click, isTouch)
         if Between(Button.x, Button.y, x, y) < Button.size then
             Score = Score + 1
             Button.x, Button.y = move.moving(WinW, WinH)
+            Button.size = math.random(25, 75)
         else
             Score = Score - 1
         end

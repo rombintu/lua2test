@@ -1,3 +1,2 @@
-run:
-	zip game.love main.lua utils/* fonts/*
-	love game.love
+build:
+	python -m zipfile -c game.love main.lua utils/ fonts/
